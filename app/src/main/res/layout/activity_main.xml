@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="#D895F8"
+            android:text="Fetch Main Stats\n (From Internet)" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:textSize="12sp"
+            android:layout_marginLeft="4dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/state_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:background="#F8AAC1"
+            android:onClick="stateData"
+            android:text="Other Stats" />
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/web_app"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="15dp"
+                android:background="#F8D894"
+                android:onClick="cov_in_app"
+                android:text="Open Website\n (covidout.in)\n (In App)" />
+
+            <Button
+                android:id="@+id/web_browser"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:background="#F8D894"
+                android:onClick="cov_in_browser"
+                android:text="Open WebSite\n (covidout.in)\n (In Browser)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/web_browser_2"
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                android:background="#A2DBF7"
+                android:onClick="cov2_in_browser"
+                android:text="Open WebSite\n (coronavirus.app)\n (In Browser)" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="4dp"
+            android:background="#E7F39E"
+            android:layout_marginBottom="20dp"
+            android:onClick="about_app"
+            android:text="About App" />
+
+
+    </LinearLayout>
+</ScrollView>
